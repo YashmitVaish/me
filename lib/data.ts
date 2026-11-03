@@ -8,7 +8,7 @@ export const profile = {
   first: "Yashmit",
   last: "Vaish",
   initials: "YV",
-  location: "Patiala, India",
+  location: "Lucknow, India",
   email: "contact@yashmitvaish.me",
   resume: "/resume.pdf",
   photo: "/me.jpg",
