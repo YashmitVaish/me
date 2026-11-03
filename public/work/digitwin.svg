@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="ui-monospace, Menlo, monospace">
+  <rect width="1600" height="900" fill="#0f0f0d"/>
+  <g stroke="#e9e6da" stroke-opacity=".06">
+    <path d="M0 100H1600M0 200H1600M0 300H1600M0 400H1600M0 500H1600M0 600H1600M0 700H1600M0 800H1600"/>
+    <path d="M100 0V900M200 0V900M300 0V900M400 0V900M500 0V900M600 0V900M700 0V900M800 0V900M900 0V900M1000 0V900M1100 0V900M1200 0V900M1300 0V900M1400 0V900M1500 0V900"/>
+  </g>
+  <text x="48" y="64" fill="#e9e6da" fill-opacity=".55" font-size="22" letter-spacing="3">DIGITWIN · USER BRAIN</text>
+  <text x="48" y="96" fill="#e9e6da" fill-opacity=".35" font-size="18">MATCH (u:User)-[r:REMEMBERS]-&gt;(m) RETURN u, r, m</text>
+
+  <!-- edges: user to memory types -->
+  <g stroke="#e9e6da" stroke-opacity=".45" stroke-width="2.5">
+    <line x1="800" y1="480" x2="470" y2="300"/>
+    <line x1="800" y1="480" x2="1130" y2="300"/>
+    <line x1="800" y1="480" x2="420" y2="660"/>
+    <line x1="800" y1="480" x2="1180" y2="660"/>
+    <line x1="800" y1="480" x2="800" y2="780"/>
+  </g>
+  <!-- edges: types to memories -->
+  <g stroke="#e9e6da" stroke-opacity=".22" stroke-width="2">
+    <line x1="470" y1="300" x2="250" y2="200"/>
+    <line x1="470" y1="300" x2="470" y2="160"/>
+    <line x1="1130" y1="300" x2="1350" y2="200"/>
+    <line x1="1130" y1="300" x2="1130" y2="160"/>
+    <line x1="420" y1="660" x2="200" y2="560"/>
+    <line x1="420" y1="660" x2="230" y2="790"/>
+    <line x1="1180" y1="660" x2="1400" y2="560"/>
+    <line x1="1180" y1="660" x2="1380" y2="790"/>
+    <line x1="800" y1="780" x2="600" y2="830"/>
+    <line x1="800" y1="780" x2="1000" y2="830"/>
+  </g>
+  <!-- cross links -->
+  <g stroke="#facc00" stroke-opacity=".35" stroke-width="2" stroke-dasharray="6 8">
+    <line x1="470" y1="160" x2="1130" y2="160"/>
+    <line x1="200" y1="560" x2="250" y2="200"/>
+  </g>
+
+  <!-- leaf memories -->
+  <g font-size="17" fill="#e9e6da" fill-opacity=".8" text-anchor="middle">
+    <g fill="#1c1c19" stroke="#e9e6da" stroke-opacity=".5" stroke-width="2">
+      <circle cx="250" cy="200" r="14"/><circle cx="470" cy="160" r="14"/>
+      <circle cx="1350" cy="200" r="14"/><circle cx="1130" cy="160" r="14"/>
+      <circle cx="200" cy="560" r="14"/><circle cx="230" cy="790" r="14"/>
+      <circle cx="1400" cy="560" r="14"/><circle cx="1380" cy="790" r="14"/>
+      <circle cx="600" cy="830" r="14"/><circle cx="1000" cy="830" r="14"/>
+    </g>
+    <text x="250" y="240">ship DigiTwin v1</text>
+    <text x="470" y="132">learn Go</text>
+    <text x="1350" y="240">dark mode</text>
+    <text x="1130" y="132">async over meetings</text>
+    <text x="200" y="600">Thapar · CoE</text>
+    <text x="230" y="830">ACM Gen Sec</text>
+    <text x="1400" y="600">hackathon · Oct</text>
+    <text x="1380" y="830">recruitment test</text>
+    <text x="600" y="870">short replies</text>
+    <text x="1000" y="870">bullet points</text>
+  </g>
+
+  <!-- memory type nodes -->
+  <g font-size="20" font-weight="700" text-anchor="middle">
+    <circle cx="470" cy="300" r="46" fill="#8ea2ff" stroke="#0f0f0d" stroke-width="4"/>
+    <text x="470" y="307" fill="#0f0f0d">Goal</text>
+    <circle cx="1130" cy="300" r="46" fill="#4cc27a" stroke="#0f0f0d" stroke-width="4"/>
+    <text x="1130" y="307" fill="#0f0f0d">Pref</text>
+    <circle cx="420" cy="660" r="46" fill="#e9e6da" stroke="#0f0f0d" stroke-width="4"/>
+    <text x="420" y="667" fill="#0f0f0d">Fact</text>
+    <circle cx="1180" cy="660" r="46" fill="#e0a03a" stroke="#0f0f0d" stroke-width="4"/>
+    <text x="1180" y="667" fill="#0f0f0d">Event</text>
+    <circle cx="800" cy="780" r="40" fill="#c792ea" stroke="#0f0f0d" stroke-width="4"/>
+    <text x="800" y="787" fill="#0f0f0d">Style</text>
+  </g>
+  <g font-size="15" fill="#e9e6da" fill-opacity=".5" text-anchor="middle">
+    <text x="470" y="372">weight 1.5</text>
+    <text x="1130" y="372">weight 1.3</text>
+    <text x="420" y="732">weight 1.0</text>
+    <text x="1180" y="732">weight 0.9</text>
+  </g>
+
+  <!-- user node -->
+  <circle cx="800" cy="480" r="78" fill="#facc00" stroke="#0f0f0d" stroke-width="5"/>
+  <text x="800" y="474" text-anchor="middle" font-size="28" font-weight="700" fill="#161616">User</text>
+  <text x="800" y="504" text-anchor="middle" font-size="16" fill="#161616" fill-opacity=".7">:Twin</text>
+
+  <text x="1552" y="64" text-anchor="end" fill="#4cc27a" font-size="20">● 5 types · 10 memories</text>
+  <text x="1552" y="96" text-anchor="end" fill="#e9e6da" fill-opacity=".35" font-size="18">score = importance × type × sim × decay(30d)</text>
+</svg>
